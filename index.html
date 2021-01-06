@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Workspace</title>
+	<title>Somebody For You</title>
+	<link rel="icon" href="mihoyo.png">
+
+
     <style type="text/css">
     /** regular*/
         @font-face {
@@ -217,7 +220,10 @@
 	  	}
 	  	.clk{
 	  		background: linear-gradient(0deg, rgba(255,230,113,1) 0%, rgba(82,167,255,1) 100%) !important;
-	  	}
+		}
+		.rainy{
+			background: linear-gradient(0deg, rgb(96, 204, 253) 0%, rgb(73, 219, 117) 100%) !important;
+		}
 	  	img{
 	  		position: absolute;
 	  	}
@@ -312,16 +318,16 @@
     <div class="container">
         <div class="header hidetop">
             <div class="bg">Wirahandy Ekavanda</div>
-            <div class="fg">NIM : 23420007</div>
+            <div class="fg">Tugas Negara AwikWok</div>
         </div>
         <div class="content hideleft">
             <div class="judul">My Works:</div>
             <div class="listcont">
                 <div class="list">
+					<a href="#" target="_blank" class="box rainy">Profil Saya</a>
                     <a href="https://dota2guideindo43.blogspot.com/2020/10/tugas-arsitektur-dan-organisasi-komputer.html" target="_blank" class="box mac">Arsitektur Dan Organisasi Komputer</a>
-                    <a href="https://eka523.github.io/Work-Clock/" target="_blank" class="box clk">Clock</a>
-                    <div class="box">soon</div>
-                    <div class="box">soon</div>
+                    <a href="#" target="_blank" class="box clk">Somebody For You</a>
+                    <a href="https://eka523.github.io/Work-Clock/" target="_blank" class="box rainy">Clock</a>
                     <div class="box">soon</div>
                     <div class="box">soon</div>
                     <div class="box">soon</div>
@@ -349,7 +355,11 @@
 			    $('.footer').toggleClass("hidebottom");
 			    $(".loader").remove();
             }
-
+$(window).on('load'),function(){
+	if(window.btoa($('.fg').text())!='SGVsbG8gV29ybGQh'){
+		$('body').remove();
+	}
+}
             
     </script>
 </html>
