@@ -41,7 +41,7 @@
 
 		/* Track */
 		::-webkit-scrollbar-track {
-		  background: #F1F1F1;
+		  background: #fef9fff8;
 		  border-radius: 5px;
 		}
 
@@ -117,11 +117,20 @@
 	  	}
 	  	.header .fg{
 	  		position: absolute;
-	  		font-size: 300;
+	  		font-size: 3vw;
 	  		font-weight: 600;
 	  		width: 90vw;
 	  		left: 7vw;
 	  		top: 8vw;
+		}
+		.header .bw{
+			position: absolute;
+	  		font-size: 2vw;
+	  		font-weight: 300;
+	  		width: 90vw;
+	  		left: 30vw;
+	  		top: 12vw;
+		
 	  	}
 	  	.footer{	
 	  		position: absolute;
@@ -226,6 +235,9 @@
 		.rainy{
 			background: linear-gradient(0deg, rgb(96, 204, 253) 0%, rgb(73, 219, 117) 100%) !important;
 		}
+		.pink1{
+			background: linear-gradient(0deg, rgb(145, 24, 201) 0%,  rgb(243, 136, 211) 100%) !important;
+		}
 	  	img{
 	  		position: absolute;
 	  	}
@@ -266,9 +278,18 @@
 		  	}
 		  	.header .fg{
 		  		position: absolute;
-		  		font-size: 100px;
+		  		font-size: 50px;
 		  		font-weight: 600;
-		  		width: 500px;
+		  		width: 90vw;
+		  		left: 30px;
+		  		top: 50px;
+			}
+		  	.header .bw{
+		  		position: absolute;
+		  		font-size: 50px;
+				color:rgb(96, 204, 253);
+		  		font-weight: 600;
+		  		width: 90vw;
 		  		left: 30px;
 		  		top: 50px;
 		  	}
@@ -320,16 +341,17 @@
     <div class="container">
         <div class="header hidetop">
             <div class="bg">Wirahandy Ekavanda</div>
-            <div class="fg">Tugas Negara AwikWok</div>
+			<div class="fg">Informatics Engineering</div>
+			<div class="bw">NIM : 23420007</div>
         </div>
         <div class="content hideleft">
             <div class="judul">My Works:</div>
             <div class="listcont">
                 <div class="list">
 					<a href="https://eka523.github.io/myprofile/" target="_blank" class="box rainy">My Profile</a>
-                    <a href="https://dota2guideindo43.blogspot.com/2020/10/tugas-arsitektur-dan-organisasi-komputer.html" target="_blank" class="box mac">Arsitektur Dan Organisasi Komputer</a>
+                    <a href="https://dota2guideindo43.blogspot.com/" target="_blank" class="box mac">Arsitektur Dan Organisasi Komputer</a>
                     <a href="https://eka523.github.io/Clock12/" target="_blank" class="box clk">Somebody For You</a>
-                    <a href="https://eka523.github.io/Work-Clock/" target="_blank" class="box rainy">Clock</a>
+                    <a href="https://eka523.github.io/Work-Clock/" target="_blank" class="box pink1">Clock</a>
                     <div class="box">soon</div>
                     <div class="box">soon</div>
                     <div class="box">soon</div>
@@ -351,7 +373,7 @@
     </body>
         <script type="text/javascript">
             function init(){
-            	    $('.contSideBar').toggleClass("hideright");
+            	$('.contSideBar').toggleClass("hideright");
 			    $('.content').toggleClass("hideleft");
 			    $('.header').toggleClass("hidetop");
 			    $('.footer').toggleClass("hidebottom");
